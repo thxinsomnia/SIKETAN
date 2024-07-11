@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+   
+}
+
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #ffffff;
+    --sb-size: 1px;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Image/large-green-rice-field-with-green-rice-plants-rows.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    gap : 30px;
+
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.logo {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    stroke: #0f0f0f;
+    stroke-width: 10px;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    right: 50px;
+   
+}
+
+.login {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #f4eeee;
+}
+
+.title h2 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #efeded;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #f4eeee;
+}
+
+.svc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4eeee;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service .cont_img {
+    width: 100%;
+    height: 300px;
+
+}
+
+.service .cont_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 0 170px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Image/large-green-rice-field-with-green-rice-plants-rows.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.wrapper .paragraph {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.wrapper .cont_imgp {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 300px;
+
+}
+
+.wrapper .cont_imgp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #000000;
+    color: #f4eeee;
+    padding: 20px;
+}
+
+
