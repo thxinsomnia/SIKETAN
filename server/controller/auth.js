@@ -55,7 +55,7 @@ router.post("/login", async (req, res) => {
   
   
             return res.json({
-              message: `Welcome to Shopionz, ${user.username}`,
+              message: `Welcome to SIKETAN, ${user.username}`,
               dataUser: user,
             });
           } else {
